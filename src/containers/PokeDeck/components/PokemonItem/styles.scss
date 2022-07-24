@@ -1,0 +1,16 @@
+.Pi-container{
+    border:1px solid #ccc;
+    border-radius: 10px ;
+    display:flex; 
+    flex-direction: column;
+    max-width: 250px;   
+    .pi-img-container{
+        padding: 20px;
+        img{
+            width: 100%;
+            background: #ccc;
+            border-radius: 10px;
+        }   
+    }
+    
+}

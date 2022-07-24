@@ -1,0 +1,16 @@
+@import "../../variables/sass-variables/variables.scss";
+
+.h-main-container{
+    @include center-flex;
+    flex-direction: column;
+    @include full-w-h;
+    gap:10px;
+
+    h2{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    h3{
+        font-weight: lighter;
+    }
+}

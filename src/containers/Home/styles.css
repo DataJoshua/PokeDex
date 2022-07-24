@@ -1,0 +1,28 @@
+.h-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.h-main-container h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.h-main-container h3 {
+  font-weight: lighter;
+}
+/*# sourceMappingURL=styles.css.map */

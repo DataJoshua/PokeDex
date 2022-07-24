@@ -1,0 +1,15 @@
+$main-color: rgb(91, 91, 91);
+$main-color-degraded:rgb(200, 171, 171);
+$yellow: #f9c900;
+$white: #fff;
+
+@mixin center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin full-w-h {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,23 @@
+.Pi-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 250px;
+}
+
+.Pi-container .pi-img-container {
+  padding: 20px;
+}
+
+.Pi-container .pi-img-container img {
+  width: 100%;
+  background: #ccc;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

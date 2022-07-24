@@ -1,0 +1,57 @@
+@import '../../variables/sass-variables/variables.scss';
+
+nav{
+    padding: 0px 100px 0px 100px;
+    
+    .logo{
+
+        @include center-flex;
+        img{
+            @include full-w-h; 
+            height: 70%;
+            
+            
+        }
+        /*h1{
+            color: $yellow;
+            text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+        }*/
+    }
+
+    background-color:$main-color ;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    ul{
+        list-style-type: none;
+        height: inherit;
+        display: flex;
+       
+        
+        .n-li{
+            padding: 0px 15px 0px 15px;
+            background-color: $main-color;
+            &:hover{
+                background-color: $main-color-degraded;
+            }
+            a{
+                display:inline-block;
+                line-height: inherit;
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:700px){
+    nav{
+        padding: 0px 0px 0px 20px;
+    }
+}
