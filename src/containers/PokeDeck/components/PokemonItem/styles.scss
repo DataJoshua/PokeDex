@@ -1,16 +1,36 @@
+@import '../../../../variables/sass-variables/variables.scss';
+
+
+
 .Pi-container{
     border:1px solid #ccc;
     border-radius: 10px ;
     display:flex; 
     flex-direction: column;
     max-width: 250px;   
+    height: 300px;
+
     .pi-img-container{
         padding: 20px;
+        max-height: 60%;
         img{
-            width: 100%;
+            @include full-w-h;
             background: #ccc;
             border-radius: 10px;
+            transition-property: background-color;
+            transition-duration: .4s;
         }   
     }
-    
+
+    h2 {
+        text-align: center;
+    }
+
+    &:hover{
+        cursor:pointer;
+    }
+    &:hover > .pi-img-container img{
+        
+        background-color: rgb(145, 145, 145) ;
+    }
 }

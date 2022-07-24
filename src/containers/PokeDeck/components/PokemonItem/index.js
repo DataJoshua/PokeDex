@@ -1,41 +1,31 @@
-import {useContext, useEffect, useState} from 'react';
-import PokemonContext from "../../../../context/";
+
+import { useNavigate } from 'react-router-dom';
+
 import "./styles.css";
 
 
 function PokemonItem(props) {
+    const navigate = useNavigate();
+    
 
-    const {makeApiCall} = useContext(PokemonContext)
-    const [info, setInfo] = useState([]);
-    const [isLoaded, setisLoaded] = useState(false);
-
-    const getPokeInfo = async ()=>{
-        let info = await makeApiCall(props.poke_url);
-        setInfo(info);
-        setisLoaded(true);
+    const handleClick = ()=>{
+        navigate(`/pokemons/${props.id}`);
     }
-    useEffect(()=>{
-        getPokeInfo();
-
-    }, []);
-
-
 
 
     return ( 
     
-        <div className="Pi-container">
+        <div className="Pi-container" onClick={handleClick}>
 
-            {isLoaded &&  
+    
             <>  
                 <div className='pi-img-container'>
-                    <img src={info.sprites.other.dream_world.front_default} alt={`${info.name} image`}/>
+                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.id}.svg`} alt={`${props.name} image`}/>
                 </div>
-                <h2>{info.name}</h2>
+                <h2>{props.name}</h2>
                 
                
-            </>}
-        
+            </>        
         </div> );
 }
 

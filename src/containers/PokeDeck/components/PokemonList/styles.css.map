@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,YAAY,CAAA;ECeR,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EDfhB,UAAU,EAAC,IAAI;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,GAAG,EAAC,QAAQ;CACf;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,YAAY,CAAA;IACR,qBAAqB,EAAE,SAAS;GACnC;;;AAGL,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,YAAY,CAAA;IACR,qBAAqB,EAAE,IAAI;GAC9B",
     "sources": [
-        "styles.scss"
+        "styles.scss",
+        "../../../../variables/sass-variables/variables.scss"
     ],
     "names": [],
     "file": "styles.css"

@@ -1,0 +1,21 @@
+@import '../../../../variables/sass-variables/variables.scss';
+
+.l-container{
+    @include contain;
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:20px 0px;
+}
+
+@media (max-width: 970px){
+    .l-container{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 600px){
+    .l-container{
+        grid-template-columns: auto;
+    }
+}

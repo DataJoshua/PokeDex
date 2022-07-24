@@ -1,0 +1,45 @@
+@import '../../variables/sass-variables/variables.scss';
+
+.pd-container{
+ background-image: url("../../assets/wallpaper.png"); 
+ background-size: cover;
+ background-repeat: no-repeat;
+ gap:10px;
+ padding-top: 50px;
+   
+    h1{
+        margin-bottom: 30px;
+    }
+
+    ul{
+        margin-top: 40px;
+    }
+
+    .pd-location{
+        margin-bottom: 50px;
+       
+    }
+
+    .pd-wallpaper{
+        @include center-flex;
+        flex-direction: column;
+    }
+
+    .pd-text-container{
+        margin-top: 50px;
+        background:rgba(204, 204, 204, 0.472);
+        text-align: center;
+        @include center-flex;
+    }
+    
+}
+
+.img-container{
+   
+    height:300px;
+    img{
+        @include full-w-h;
+        
+    }
+}
+

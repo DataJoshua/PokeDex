@@ -11,7 +11,7 @@ function NavBar() {
             <ul>
                 <li className="n-li"><Link to="/">Home</Link></li>
                 <li className="n-li"><Link to="/pokemons">pokemons</Link></li>
-                <li className="n-li"><Link to="pokemons/item">Item</Link></li>
+                
             </ul>
         </nav> 
     );

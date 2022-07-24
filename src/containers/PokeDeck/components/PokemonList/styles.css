@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.l-container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 20px 0px;
+}
+
+@media (max-width: 970px) {
+  .l-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .l-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

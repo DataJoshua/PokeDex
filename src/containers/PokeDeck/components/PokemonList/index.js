@@ -10,13 +10,17 @@ function PokemonList() {
     useEffect(()=>{
         getAllPokes().catch(null);
 
-    }, [])
+    }, []);
+
+    const handleClick = ()=>{
+        console.log("you made a click");
+    }
     
     return ( 
 
         <div className='l-container'>
             {allPokes?.map((value,index)=>{
-                return  <PokemonItem key={index} poke_url={value.url}></PokemonItem> 
+                return  <PokemonItem onClick={handleClick} key={index} poke_url={value.url} name={value.name} id={index + 1}></PokemonItem> 
             })}
            
         </div>

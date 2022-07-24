@@ -1,0 +1,60 @@
+.pd-container {
+  background-image: url("../../assets/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 10px;
+  padding-top: 50px;
+}
+
+.pd-container h1 {
+  margin-bottom: 30px;
+}
+
+.pd-container ul {
+  margin-top: 40px;
+}
+
+.pd-container .pd-location {
+  margin-bottom: 50px;
+}
+
+.pd-container .pd-wallpaper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pd-container .pd-text-container {
+  margin-top: 50px;
+  background: rgba(204, 204, 204, 0.472);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-container {
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

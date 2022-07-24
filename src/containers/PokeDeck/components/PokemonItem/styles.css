@@ -9,15 +9,34 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 250px;
+  height: 300px;
 }
 
 .Pi-container .pi-img-container {
   padding: 20px;
+  max-height: 60%;
 }
 
 .Pi-container .pi-img-container img {
   width: 100%;
+  height: 100%;
   background: #ccc;
   border-radius: 10px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.Pi-container h2 {
+  text-align: center;
+}
+
+.Pi-container:hover {
+  cursor: pointer;
+}
+
+.Pi-container:hover > .pi-img-container img {
+  background-color: #919191;
 }
 /*# sourceMappingURL=styles.css.map */
