@@ -8,7 +8,7 @@ function PokemonProvider({children}) {
 
     const getAllPokes = async ()=>{
       try{
-        let pokes = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0");
+        let pokes = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0");
         let allPokes = await pokes.json();
         setAllPokes(allPokes.results);
         setRequestFinished(true);

@@ -14,6 +14,10 @@
   .l-container {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -21,6 +25,9 @@
   .l-container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

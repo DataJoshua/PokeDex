@@ -23,13 +23,36 @@
     .pd-wallpaper{
         @include center-flex;
         flex-direction: column;
+        margin-bottom:10px;
     }
 
     .pd-text-container{
-        margin-top: 50px;
+        padding-top: 30px;
         background:rgba(204, 204, 204, 0.472);
-        text-align: center;
-        @include center-flex;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        justify-content: center;
+        gap: 50px;
+        padding-bottom: 30px;
+     
+        .pd-item-location{
+            overflow: scroll;
+        }
+        .pd-text-location{
+            display: flex;
+            gap:20px;
+        }
+        .pd-text-item{
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 7px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+
+        .pd-locations{
+            height: 150px;
+        }
     }
     
 }
@@ -43,3 +66,16 @@
     }
 }
 
+
+@media (max-width:900px){
+    .pd-text-container{
+        grid-template-columns: auto auto !important;
+    }
+}
+
+
+@media (max-width:680px){
+    .pd-text-container{
+        grid-template-columns: auto !important;
+    }
+}
