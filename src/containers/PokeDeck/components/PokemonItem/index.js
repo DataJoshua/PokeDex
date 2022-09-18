@@ -20,9 +20,11 @@ function PokemonItem(props) {
     
             <>  
                 <div className='pi-img-container'>
-                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.id}.svg`} alt={`${props.name} image`} loading="lazy"/>
+                    {props.display_img ? <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.id}.svg`} alt={`${props.name} image`} loading="lazy"/> : <div className="loading-tumb-container"><div className="loading-tumb"></div></div>}
                 </div>
-                <h2>{props.name}</h2>
+                <div>
+                    <h2>{props.name}</h2>
+                </div>
                 
                
             </>        

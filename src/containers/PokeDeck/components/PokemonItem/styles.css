@@ -1,6 +1,7 @@
 .Pi-container {
-  border: 1px solid #ccc;
+  border: 1.3px solid #a1a0a0;
   border-radius: 10px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +11,8 @@
           flex-direction: column;
   max-width: 250px;
   height: 300px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .Pi-container .pi-img-container {
@@ -38,5 +41,53 @@
 
 .Pi-container:hover > .pi-img-container img {
   background-color: #919191;
+}
+
+.loading-tumb-container {
+  background: #ccc;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading-tumb {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: 7px solid #000;
+  border-top: 7px solid #ccc;
+  border-radius: 100%;
+  -webkit-animation: rotate 1s ease infinite;
+          animation: rotate 1s ease infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,15 @@
+@import '../../variables/sass-variables/variables.scss';
+
+
+button{
+    height: 40px;
+    width: 150px;
+    border:none;
+    background-color: $btn-primary-color;
+    color: #fff;
+    transition: background-color .4s ease;
+    &:hover{
+        cursor:pointer;
+        background-color: $btn-hover;
+    }
+}

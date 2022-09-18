@@ -1,6 +1,6 @@
 nav {
   padding: 0px 100px 0px 100px;
-  background-color: #000;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,11 +44,11 @@ nav ul {
 
 nav ul .n-li {
   padding: 0px 15px 0px 15px;
-  background-color: #000;
+  background-color: black;
 }
 
 nav ul .n-li:hover {
-  background-color: #b73c3c;
+  background-color: #c8abab;
 }
 
 nav ul .n-li a {

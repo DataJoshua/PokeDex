@@ -1,13 +1,14 @@
 .l-container {
   max-width: 80%;
   margin: auto;
-  margin-top: 20px;
+  padding-top: 50px;
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   gap: 20px 0px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 970px) {

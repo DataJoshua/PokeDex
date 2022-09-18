@@ -37,7 +37,23 @@
      
         .pd-item-location{
             overflow: scroll;
+            overflow-x: hidden;
         }
+
+        .pd-item-location::-webkit-scrollbar{
+            width:10px;
+            border-radius: 20px;
+        }
+
+        .pd-item-location::-webkit-scrollbar-track{
+            background-color: $main-color-degraded;
+        }
+
+        .pd-item-location::-webkit-scrollbar-thumb{
+            background-color: $main-color;
+            border-radius: 10px;
+        }
+
         .pd-text-location{
             display: flex;
             gap:20px;

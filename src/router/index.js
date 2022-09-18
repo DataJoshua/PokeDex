@@ -6,6 +6,7 @@ import "./styles.css";
 import FourOFour from "../containers/FourOFour";
 import PokeDisplay from "../containers/PokeDisplay";
 import PokemonProvider from "../context/Provider";
+import PokeItemLoading from "../components/PokeItemLoading";
 
 function Router() {
     return (  
@@ -22,7 +23,7 @@ function Router() {
                     <Route path="/pokemons" exact element={<PokeDeck/>}></Route>
                     <Route path="/pokemons/:id" element={<PokeDisplay/>}></Route>
                     <Route path="*" element={<FourOFour />}></Route>
-                   
+                    <Route path="admin-test" element = {<PokeItemLoading></PokeItemLoading>}></Route>
                     
 
                     </Routes>

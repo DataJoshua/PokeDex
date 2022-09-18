@@ -1,0 +1,15 @@
+button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  background-color: #ff0b3c;
+  color: #fff;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ce4b65;
+}
+/*# sourceMappingURL=styles.css.map */

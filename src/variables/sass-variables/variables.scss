@@ -1,7 +1,9 @@
-$main-color: rgb(91, 91, 91);
+$main-color: rgb(0, 0, 0);
 $main-color-degraded:rgb(200, 171, 171);
 $yellow: #f9c900;
 $white: #fff;
+$btn-primary-color: rgb(255, 11, 60);
+$btn-hover: rgb(206, 75, 101);
 
 @mixin center-flex{
     display: flex;
@@ -14,8 +16,14 @@ $white: #fff;
     height: 100%;
 }
 
-@mixin contain(){
+@mixin contain{
     max-width: 80%;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 50px;
+}
+
+@mixin flex-column($gap:20px) {
+    display: flex;
+    flex-direction: column;
+    gap:$gap;
 }

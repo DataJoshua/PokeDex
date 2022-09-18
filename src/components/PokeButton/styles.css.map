@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,MAAM,CAAA;EACF,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAC,IAAI;EACX,gBAAgB,ECHA,OAAgB;EDIhC,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,yBAAyB;CAKxC;;AAXD,AAOI,MAPE,AAOD,MAAM,CAAA;EACH,MAAM,EAAC,OAAO;EACd,gBAAgB,ECPZ,OAAiB;CDQxB",
+    "sources": [
+        "styles.scss",
+        "../../variables/sass-variables/variables.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

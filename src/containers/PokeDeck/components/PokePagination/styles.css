@@ -1,0 +1,13 @@
+.Pp-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom:30px;
+}
+
+.pp-btn:first-child{
+    margin-right: 20px;
+}
+.pp-btn{
+    border-radius: 20px;
+    background-color: #000;
+}
